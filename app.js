@@ -22,3 +22,5 @@ let animelist = [{Judul: "Shingeki no Kyojin", Airing: "2013", Genre: ["Action",
 {Judul: "Tokyo Ghoul", Airing: "2014", Genre: ["Horror", "Action"]}, 
 {Judul: "Another", Airing: "2009", Genre: ["Horror", "Drama"]}, 
 {Judul: "Mirai Nikki", Airing: "2011", Genre: ["Horror"]},] 
+
+////
