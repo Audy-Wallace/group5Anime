@@ -27,7 +27,7 @@
                 <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./mainpage.html" target="_blank" >My WatchList</a>
+                <a class="nav-link active" aria-current="page" href="#" id="watchlist">My Favorite</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,6 +84,8 @@
                     <!-- Button trigger modal -->
                     
                 </div>
+
+                <div class="division">Something</div>
             </div>
             <footer class="sticky-bottom">
                 <div class="copyright text-center text-white fw-bold bg-dark p-4">
@@ -101,26 +103,41 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-        let animelist = [{Judul: "Shingeki no Kyojin", Airing: "2013", Genre: ["Action", "Drama"], image: "./gambarAnime/snk.jpg" ,trailer: "https://www.youtube.com/watch?v=MGRm4IzK1SQ&ab_channel=NIHONOMARU"}, 
-        {Judul: "Demon Slayer", Airing: "2019", Genre: ["Action", "Horror"],image: "./gambarAnime/demo-slayer.jpg",trailer:"https://www.youtube.com/watch?v=VQGCKyvzIM4&ab_channel=AniplexUSA"}, 
-        {Judul: "Boku No Hero Academia", Airing: "2016", Genre: ["Action", "Comedy"],image: "./gambarAnime/bnh.jpg",trailer:"https://www.youtube.com/watch?v=qR1B84zVPjs&ab_channel=DREAMLIGHT"}, 
-        {Judul: "Jujutsu Kaisen", Airing: "2020", Genre: ["Action", "Horror"],image: "./gambarAnime/jjK.jpg" ,trailer:"https://www.youtube.com/watch?v=f7R6NA4Yo00&ab_channel=GremoryCollection"}, 
-        {Judul: "Naruto", Airing: "2002", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/naruto.jpg" ,trailer:"https://www.youtube.com/watch?v=tA3yE4_t6SY&ab_channel=MadmanAnime"}, 
-        {Judul: "One Piece", Airing: "1999", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/onepiece.jpg",trailer:"https://www.youtube.com/watch?v=LHTYpWI3S6Q&ab_channel=Cinema24Horas"}, 
-        {Judul: "Hunter x Hunter", Airing: "1999", Genre: ["Action", "Adventure"],image: "./gambarAnime/hxh.jpg",trailer:"https://www.youtube.com/watch?v=d6kBeJjTGnY&ab_channel=vizmedia"}, 
-        {Judul: "Fairy Tail", Airing: "2009", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/fairytail.jpg",trailer:"https://www.youtube.com/watch?v=BaIWwk-sAlw&ab_channel=TheKamikazeGuy"}, 
-        {Judul: "Sword Art Online", Airing: "2012", Genre: ["Action", "Adventure"],image: "./gambarAnime/sao.png",trailer:"https://www.youtube.com/watch?v=6ohYYtxfDCg&ab_channel=MadmanAnime"}, 
-        {Judul: "Konosuba", Airing: "2016", Genre: ["Adventure", "Comedy"],image: "./gambarAnime/konosuba.jpg",trailer:"https://www.youtube.com/watch?v=h4dX58X6ln4&ab_channel=dimsumentertainment"}, 
-        {Judul: "Gintama", Airing: "2011", Genre: ["Action", "Comedy"],image: "./gambarAnime/gintama.jpg",trailer:"https://www.youtube.com/watch?v=GWeuZr6fT6o&ab_channel=JPAnime"}, 
-        {Judul: "One Punch Man", Airing: "2015", Genre: ["Action", "Comedy"], image: "./gambarAnime/opm.jpg",trailer:"https://www.youtube.com/watch?v=Poo5lqoWSGw&ab_channel=vizmedia"}, 
-        {Judul: "Mob Psycho", Airing: "2016", Genre: ["Comedy", "Action"], image: "./gambarAnime/mobpsycho.jpg",trailer:"https://www.youtube.com/watch?v=arIkbf46XII&ab_channel=dan"}, 
-        {Judul: "Kaguya-sama: Love is War", Airing: "2019", Genre: ["Comedy", "Drama", "Romance"],image: "./gambarAnime/kaguya.jpg",trailer:"https://www.youtube.com/watch?v=ld4Zxe9XmGo&ab_channel=AniTV"}, 
-        {Judul: "Your Lie In April", Airing: "2014", Genre: ["Drama", "Romance"],image: "./gambarAnime/yourlie.jpg",trailer:"https://www.youtube.com/watch?v=3aL0gDZtFbE&ab_channel=AniplexUSA"}, 
-        {Judul: "Your Name", Airing: "2017", Genre: ["Romance", "Drama"],image: "./gambarAnime/your-name.jpg",trailer:"https://www.youtube.com/watch?v=27q1kdb3sNY&ab_channel=MadmanAnime"}, 
-        {Judul: "Parasyte", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/parasyte.jpg",trailer:"https://www.youtube.com/watch?v=rj63TDpaBWk&ab_channel=PandoraHell"}, 
-        {Judul: "Tokyo Ghoul", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/tokyo-ghoul.jpg",trailer:"https://www.youtube.com/watch?v=iSgFFY87Rg0&ab_channel=MadmanAnime"}, 
-        {Judul: "Another", Airing: "2009", Genre: ["Horror", "Drama"],image: "./gambarAnime/another.jpg",trailer:"https://www.youtube.com/watch?v=_U_57mzfjB4&ab_channel=danielburgos"}, 
-        {Judul: "Mirai Nikki", Airing: "2011", Genre: ["Horror"],image: "./gambarAnime/mirrai-nikki.jpg",trailer:"https://www.youtube.com/watch?v=KfznTm8mJA4&ab_channel=MadmanAnime"}]
+let animelist = [{Judul: "Shingeki no Kyojin", Airing: "2013", Genre: ["Action", "Drama"], image: "./gambarAnime/snk.jpg" ,trailer: "https://www.youtube.com/watch?v=MGRm4IzK1SQ&ab_channel=NIHONOMARU", Description: "It is set in a world where humanity lives inside cities surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown and the death of his mother."}, 
+{Judul: "Demon Slayer", Airing: "2019", Genre: ["Action", "Horror"],image: "./gambarAnime/demo-slayer.jpg",trailer:"https://www.youtube.com/watch?v=VQGCKyvzIM4&ab_channel=AniplexUSA", Description: "The story of Tanjiro Kamado and his sister turned demon Nezuko. Determined to find a way to turn Nezuko back into a human Tanjiro joins the Demon Slayer Corps., a group of swordsman whose purpose is to eliminate all demons, to find the answers he seeks."
+}, 
+{Judul: "Boku No Hero Academia", Airing: "2016", Genre: ["Action", "Comedy"],image: "./gambarAnime/bnh.jpg",trailer:"https://www.youtube.com/watch?v=qR1B84zVPjs&ab_channel=DREAMLIGHT", Description: "The story of Izuku Midoriya, a boy born without superpowers in a world where they have become commonplace, but who still dreams of becoming a superhero himself."}, 
+{Judul: "Jujutsu Kaisen", Airing: "2020", Genre: ["Action", "Horror"],image: "./gambarAnime/jjK.jpg" ,trailer:"https://www.youtube.com/watch?v=f7R6NA4Yo00&ab_channel=GremoryCollection", Description: "The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host."}, 
+{Judul: "Naruto", Airing: "2002", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/naruto.jpg" ,trailer:"https://www.youtube.com/watch?v=tA3yE4_t6SY&ab_channel=MadmanAnime", Description: "It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens to adult years."
+}, 
+{Judul: "One Piece", Airing: "1999", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/onepiece.jpg",trailer:"https://www.youtube.com/watch?v=LHTYpWI3S6Q&ab_channel=Cinema24Horas", Description: "The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as One Piece in order to become the next Pirate King."
+}, 
+{Judul: "Hunter x Hunter", Airing: "1999", Genre: ["Action", "Adventure"],image: "./gambarAnime/hxh.jpg",trailer:"https://www.youtube.com/watch?v=d6kBeJjTGnY&ab_channel=vizmedia", Description: "The story focuses on a young boy named Gon Freecss who discovers that his father, who left him at a young age, is actually a world-renowned Hunter, a licensed professional who specializes in fantastical pursuits such as locating rare or unidentified animal species, treasure hunting, surveying unexplored enclaves, or hunting down lawless individuals."}, 
+{Judul: "Fairy Tail", Airing: "2009", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/fairytail.jpg",trailer:"https://www.youtube.com/watch?v=BaIWwk-sAlw&ab_channel=TheKamikazeGuy", Description: "The story follows the adventures of Natsu Dragneel, a member of the popular wizard guild Fairy Tail, as he searches the fictional world of Earth-land for the dragon Igneel."
+}, 
+{Judul: "Sword Art Online", Airing: "2012", Genre: ["Action", "Adventure"],image: "./gambarAnime/sao.png",trailer:"https://www.youtube.com/watch?v=6ohYYtxfDCg&ab_channel=MadmanAnime", Description: "The series takes place in the near future and focuses on protagonists Kazuto Kirito Kirigaya and Asuna Yuuki as they play through various virtual reality MMORPG worlds."
+}, 
+{Judul: "Konosuba", Airing: "2016", Genre: ["Adventure", "Comedy"],image: "./gambarAnime/konosuba.jpg",trailer:"https://www.youtube.com/watch?v=h4dX58X6ln4&ab_channel=dimsumentertainment", Description: "The series follows Kazuma Satō, a boy who is sent to a fantasy world with MMORPG elements following his death, where he forms a dysfunctional adventuring party with a goddess, an archwizard, and a crusader."
+}, 
+{Judul: "Gintama", Airing: "2011", Genre: ["Action", "Comedy"],image: "./gambarAnime/gintama.jpg",trailer:"https://www.youtube.com/watch?v=GWeuZr6fT6o&ab_channel=JPAnime", Description: "Set in Edo, which has been conquered by aliens named Amanto, the plot follows life from the point of view of samurai Gintoki Sakata, who works as a freelancer alongside his friends Shinpachi Shimura and Kagura to pay the monthly rent."
+}, 
+{Judul: "One Punch Man", Airing: "2015", Genre: ["Action", "Comedy"], image: "./gambarAnime/opm.jpg",trailer:"https://www.youtube.com/watch?v=Poo5lqoWSGw&ab_channel=vizmedia", Description: "It tells the story of Saitama, a superhero who can defeat any opponent with a single punch but seeks to find a worthy opponent after growing bored by a lack of challenge due to his overwhelming strength."
+}, 
+{Judul: "Mob Psycho", Airing: "2016", Genre: ["Comedy", "Action"], image: "./gambarAnime/mobpsycho.jpg",trailer:"https://www.youtube.com/watch?v=arIkbf46XII&ab_channel=dan", Description: "Shigeo Kageyama is an average middle school boy, nicknamed Mob for lacking a sense of presence. Although he looks like an inconspicuous person, he is in fact a powerful esper with immense psychic power."
+}, 
+{Judul: "Kaguya-sama: Love is War", Airing: "2019", Genre: ["Comedy", "Drama", "Romance"],image: "./gambarAnime/kaguya.jpg",trailer:"https://www.youtube.com/watch?v=ld4Zxe9XmGo&ab_channel=AniTV", Description: "In the senior high school division of Shuchiin Academy, student council president Miyuki Shirogane and vice president Kaguya Shinomiya appear to be a perfect match. Although they like each other, they are too proud to confess their love, coming up with many schemes to make the other confess."
+}, 
+{Judul: "Your Lie In April", Airing: "2014", Genre: ["Drama", "Romance"],image: "./gambarAnime/yourlie.jpg",trailer:"https://www.youtube.com/watch?v=3aL0gDZtFbE&ab_channel=AniplexUSA", Description: "The story follows a young pianist named Kо̄sei Arima, who loses the ability to hear the piano after his mother's death and his experiences after he meets violinist Kaori Miyazono."
+}, 
+{Judul: "Your Name", Airing: "2017", Genre: ["Romance", "Drama"],image: "./gambarAnime/your-name.jpg",trailer:"https://www.youtube.com/watch?v=27q1kdb3sNY&ab_channel=MadmanAnime", Description: "It depicts a high school boy in Tokyo and a high school girl in the Japanese countryside who suddenly and inexplicably begin to swap bodies."
+}, 
+{Judul: "Parasyte", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/parasyte.jpg",trailer:"https://www.youtube.com/watch?v=rj63TDpaBWk&ab_channel=PandoraHell", Description: "Parasyte centers on a 17-year-old male high school student named Shinichi Izumi, who lives with his mother and father in a quiet neighborhood in Fukuyama, Hiroshima, Japan. One night, tiny worm-like aliens with drill-like heads called Parasites arrive on Earth, taking over the brains of their hosts by entering through their ears or noses."
+}, 
+{Judul: "Tokyo Ghoul", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/tokyo-ghoul.jpg",trailer:"https://www.youtube.com/watch?v=iSgFFY87Rg0&ab_channel=MadmanAnime", Description: "The story follows Ken Kaneki, a student who barely survives a deadly encounter with Rize Kamishiro, his date who reveals herself as a ghoul and tries to eat him. He is taken to the hospital in critical condition. After recovering, Kaneki discovers that he underwent a surgery that transformed him into a half-ghoul."
+}, 
+{Judul: "Another", Airing: "2009", Genre: ["Horror", "Drama"],image: "./gambarAnime/another.jpg",trailer:"https://www.youtube.com/watch?v=_U_57mzfjB4&ab_channel=danielburgos", Description: "The story focuses on a boy named Kōichi Sakakibara who, upon transferring into Yomiyama Middle School and meeting the curious Mei Misaki, finds himself in a mystery revolving around students and people related to his class falling victim to gruesome, senseless deaths."
+}, 
+{Judul: "Mirai Nikki", Airing: "2011", Genre: ["Horror"],image: "./gambarAnime/mirrai-nikki.jpg",trailer:"https://www.youtube.com/watch?v=KfznTm8mJA4&ab_channel=MadmanAnime", Description: "The plot depicts the Diary Game, a deadly battle royal between 12 different individuals who are given Future Diaries, special diaries that can predict the future, by Deus Ex Machina, the God of Time and Space, with the last survivor becoming his heir."}]
 
 
         document.querySelector("#logo").addEventListener("click",()=>{
@@ -130,6 +147,40 @@
         document.querySelector("#home").addEventListener("click",()=>{
             window.location.reload();
         })
+
+        var fav = []
+        function addFavorite (title) {
+            for (let i = 0; i < animelist.length; i++) {
+                let judul = animelist[i].Judul
+                    if (title === judul) {
+                        fav.push(animelist[i])
+                    }
+            }
+
+            let output = []
+
+            for(let anime of fav){
+
+                let isDuplicate = false;
+                for(let data of output){
+                    if(data.Judul === anime.Judul){
+                        isDuplicate = true;
+                        break;
+                    }
+                }
+
+                if(!isDuplicate){
+                    output.push(anime);
+                }
+            }
+
+            fav = output;
+
+            
+            console.log(fav);
+            localStorage.setItem("fav",fav)
+            return fav
+        }
 
         function displayTrend(animeList){
             let cardContainer = document.querySelector("#card-container")
@@ -141,9 +192,9 @@
                     <img src="${anime.image}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${anime.Judul}</h5>
-                        <p class="card-text">Random Description.</p>
+                        <p class="card-text">${anime.Description}</p>
                         <a href="${anime.trailer}" target="_blank" class="btn btn-primary">Trailer</a>
-                        <a class="btn btn-secondary bg-red mt-2" id="watch">Add to Watch List</a>
+                        <a class=" btn btn-danger mt-2" onclick="addFavorite('${anime.Judul}')">Add to Favorite</a>
                     </div>
                 </div>
                 
@@ -155,10 +206,7 @@
         displayTrend(animelist);
 
 
-        // document.querySelector("#watch").onclick = function(){
-        //     let list = document.querySelector(".card-title").innerHTML;
-        //     console.log(list);
-        // }
+
 
 
 
@@ -381,6 +429,95 @@
 
             displayTrend(output);
         }
+
+    
+
+
+        
+        
+
+        function del (title) {
+
+
+            let delList = [];
+
+            for (let i = 0; i < fav.length; i++) {
+                let judul = fav[i].Judul
+                    if (title !== judul) {
+                        delList.push(fav[i])
+                    }
+                }
+            
+            fav = delList;
+            console.log(fav);
+            localStorage.setItem("fav",fav);
+            document.querySelector("#card-container").innerHTML ="";
+
+            if (delList.length === 0){
+                document.querySelector("#card-container").innerHTML = 
+                        `
+                            <div class="empty" style="height: 1000px;">Some Text</div>
+                        `
+
+            }else{
+                
+                for(let anime of fav){
+                    document.querySelector("#card-container").innerHTML += 
+                `<div class="card ms-3 me-3 mb-10 mt-3" style="width: 16rem;">
+                    <img src="${anime.image}" class="card-img-top" alt="...">
+                    <div class="card-body mb-4">
+                        <h5 class="card-title">${anime.Judul}</h5>
+                        <p class="card-text">${anime.Description}.</p>
+                        <a href="${anime.trailer}" target="_blank" class="btn btn-primary">Trailer</a>
+                        <a href="#" class=" btn btn-danger mt-2" onclick="del('${anime.Judul}')">Delete</a>
+                    </div>
+                </div>
+                
+                
+                `;
+                }
+            }
+            
+        }
+        document.querySelector("#watchlist").onclick= function(){
+
+            document.querySelector(".carousel").style.display = "none";
+            document.querySelector("#title").innerHTML = 
+            `
+                <div class="dropdown">
+                    <h3 class="mt-4">Your Favorite List:</h3>
+                </div>
+
+            
+            `;
+            document.querySelector("#card-container").innerHTML = ""
+            if (fav.length === 0){
+                document.querySelector("#card-container").innerHTML = 
+                        `
+                            <div class="empty" style="height: 1000px;">Some Text</div>
+                        `
+
+            }else{
+                
+                for(let anime of fav){
+                    document.querySelector("#card-container").innerHTML += 
+                `<div class="card ms-3 me-3 mb-10 mt-3" style="width: 16rem;">
+                    <img src="${anime.image}" class="card-img-top" alt="...">
+                    <div class="card-body mb-4">
+                        <h5 class="card-title">${anime.Judul}</h5>
+                        <p class="card-text">${anime.Description}.</p>
+                        <a href="${anime.trailer}" target="_blank" class="btn btn-primary">Trailer</a>
+                        <a href="#" class=" btn btn-danger mt-2" onclick="del('${anime.Judul}')">Delete</a>
+                    </div>
+                </div>
+                
+                
+                `;
+                }
+            }
+        }
+
+
 
 
 
