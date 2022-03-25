@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>WaifuQu</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-gradient ">
+        <div class="container">
+          <a id="logo" class="navbar-brand fw-bold fs-2" href="#">WaifuQu <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="red"  margin-left="0" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M278.574 20.672l-28.246 43.463c-36.452-29.484-87.944-38.624-127.96-30.428-54.457 11.15-100.166 60.347-97.895 131.46 2.394 74.955 54.71 129.71 104.89 174.823 25.09 22.554 50.84 43.086 69.928 61.535 37.685 34.062 55.942 92.366 55.942 92.366s24.534-59.502 55.942-89.572c19.692-18.7 45.676-39.61 71.324-62.93 51.298-46.644 104.404-104.034 102.094-177.618 0-122.308-121.2-121.013-167.883-78.495 19.323-10.226 40.12-12.397 58.798-8.214 34.297 7.683 62.693 35.935 64.332 88.108 1.562 49.92-39.09 98.088-88.11 142.654-24.508 22.28-49.752 42.445-71.324 62.93-11.456 10.884-16.74 20.514-25.174 31.795-8.437-11.983-13.663-22.066-25.173-33.192C174.715 306.4 86.784 238.475 83.27 163.77c-.72-62.22 72.103-78.604 111.246-51.04l-45.924 25.258c67.393 11.144 124.746 37.36 185.597 75.588L278.573 20.672z"></path></svg>
+        </a>
+         
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./mainpage.html" target="_blank" >My WatchList</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" id="action">Action</a></li>
+                  <li><a class="dropdown-item" href="#" id="adventure">Adventure</a></li>
+                  <li><a class="dropdown-item" href="#" id="comedy">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#" id="drama">Drama</a></li>
+                  <li><a class="dropdown-item" href="#" id="horror">Horror</a></li>
+                  <li><a class="dropdown-item" href="#" id="romance">Romance</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+              <button class="btn btn-outline-success" type="submit" id="searchBtn">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-row" >
+        <div class="col-md-10 offset-md-1" id="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./gambarAnime/wallpaperflare.com_wallpaper.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./gambarAnime/wallpaperflare.com_wallpaper (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./gambarAnime/wallpaperflare.com_wallpaper (2).jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="anime-cards">
+            <h4 class="text-center fw-bold my-3" id="title">Trending Anime:</h4>
+
+            <div class="col-md-10 offset-md-1">
+                <div class="row mx-auto justify-content-center" id="card-container">
+                    <!-- Button trigger modal -->
+                    
+                </div>
+            </div>
+            <footer class="sticky-bottom">
+                <div class="copyright text-center text-white fw-bold bg-dark p-4">
+                  <p>Developed by Elon Musk Copyright © 2022</p>
+              </div>
+            </footer>
+      </div>
+    
+
+        
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        let animelist = [{Judul: "Shingeki no Kyojin", Airing: "2013", Genre: ["Action", "Drama"], image: "./gambarAnime/snk.jpg" ,trailer: "https://www.youtube.com/watch?v=MGRm4IzK1SQ&ab_channel=NIHONOMARU"}, 
+        {Judul: "Demon Slayer", Airing: "2019", Genre: ["Action", "Horror"],image: "./gambarAnime/demo-slayer.jpg",trailer:"https://www.youtube.com/watch?v=VQGCKyvzIM4&ab_channel=AniplexUSA"}, 
+        {Judul: "Boku No Hero Academia", Airing: "2016", Genre: ["Action", "Comedy"],image: "./gambarAnime/bnh.jpg",trailer:"https://www.youtube.com/watch?v=qR1B84zVPjs&ab_channel=DREAMLIGHT"}, 
+        {Judul: "Jujutsu Kaisen", Airing: "2020", Genre: ["Action", "Horror"],image: "./gambarAnime/jjK.jpg" ,trailer:"https://www.youtube.com/watch?v=f7R6NA4Yo00&ab_channel=GremoryCollection"}, 
+        {Judul: "Naruto", Airing: "2002", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/naruto.jpg" ,trailer:"https://www.youtube.com/watch?v=tA3yE4_t6SY&ab_channel=MadmanAnime"}, 
+        {Judul: "One Piece", Airing: "1999", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/onepiece.jpg",trailer:"https://www.youtube.com/watch?v=LHTYpWI3S6Q&ab_channel=Cinema24Horas"}, 
+        {Judul: "Hunter x Hunter", Airing: "1999", Genre: ["Action", "Adventure"],image: "./gambarAnime/hxh.jpg",trailer:"https://www.youtube.com/watch?v=d6kBeJjTGnY&ab_channel=vizmedia"}, 
+        {Judul: "Fairy Tail", Airing: "2009", Genre: ["Action", "Adventure", "Comedy"],image: "./gambarAnime/fairytail.jpg",trailer:"https://www.youtube.com/watch?v=BaIWwk-sAlw&ab_channel=TheKamikazeGuy"}, 
+        {Judul: "Sword Art Online", Airing: "2012", Genre: ["Action", "Adventure"],image: "./gambarAnime/sao.png",trailer:"https://www.youtube.com/watch?v=6ohYYtxfDCg&ab_channel=MadmanAnime"}, 
+        {Judul: "Konosuba", Airing: "2016", Genre: ["Adventure", "Comedy"],image: "./gambarAnime/konosuba.jpg",trailer:"https://www.youtube.com/watch?v=h4dX58X6ln4&ab_channel=dimsumentertainment"}, 
+        {Judul: "Gintama", Airing: "2011", Genre: ["Action", "Comedy"],image: "./gambarAnime/gintama.jpg",trailer:"https://www.youtube.com/watch?v=GWeuZr6fT6o&ab_channel=JPAnime"}, 
+        {Judul: "One Punch Man", Airing: "2015", Genre: ["Action", "Comedy"], image: "./gambarAnime/opm.jpg",trailer:"https://www.youtube.com/watch?v=Poo5lqoWSGw&ab_channel=vizmedia"}, 
+        {Judul: "Mob Psycho", Airing: "2016", Genre: ["Comedy", "Action"], image: "./gambarAnime/mobpsycho.jpg",trailer:"https://www.youtube.com/watch?v=arIkbf46XII&ab_channel=dan"}, 
+        {Judul: "Kaguya-sama: Love is War", Airing: "2019", Genre: ["Comedy", "Drama", "Romance"],image: "./gambarAnime/kaguya.jpg",trailer:"https://www.youtube.com/watch?v=ld4Zxe9XmGo&ab_channel=AniTV"}, 
+        {Judul: "Your Lie In April", Airing: "2014", Genre: ["Drama", "Romance"],image: "./gambarAnime/yourlie.jpg",trailer:"https://www.youtube.com/watch?v=3aL0gDZtFbE&ab_channel=AniplexUSA"}, 
+        {Judul: "Your Name", Airing: "2017", Genre: ["Romance", "Drama"],image: "./gambarAnime/your-name.jpg",trailer:"https://www.youtube.com/watch?v=27q1kdb3sNY&ab_channel=MadmanAnime"}, 
+        {Judul: "Parasyte", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/parasyte.jpg",trailer:"https://www.youtube.com/watch?v=rj63TDpaBWk&ab_channel=PandoraHell"}, 
+        {Judul: "Tokyo Ghoul", Airing: "2014", Genre: ["Horror", "Action"],image: "./gambarAnime/tokyo-ghoul.jpg",trailer:"https://www.youtube.com/watch?v=iSgFFY87Rg0&ab_channel=MadmanAnime"}, 
+        {Judul: "Another", Airing: "2009", Genre: ["Horror", "Drama"],image: "./gambarAnime/another.jpg",trailer:"https://www.youtube.com/watch?v=_U_57mzfjB4&ab_channel=danielburgos"}, 
+        {Judul: "Mirai Nikki", Airing: "2011", Genre: ["Horror"],image: "./gambarAnime/mirrai-nikki.jpg",trailer:"https://www.youtube.com/watch?v=KfznTm8mJA4&ab_channel=MadmanAnime"}]
+
+
+        document.querySelector("#logo").addEventListener("click",()=>{
+            window.location.reload();
+        })
+
+        document.querySelector("#home").addEventListener("click",()=>{
+            window.location.reload();
+        })
+
+        function displayTrend(animeList){
+            let cardContainer = document.querySelector("#card-container")
+            let count = 0;
+            for(let anime of animeList){
+                count++;
+                cardContainer.innerHTML += 
+                `<div class="card ms-3 me-3 mb-3 mt-3" style="width: 16rem;">
+                    <img src="${anime.image}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${anime.Judul}</h5>
+                        <p class="card-text">Random Description.</p>
+                        <a href="${anime.trailer}" target="_blank" class="btn btn-primary">Trailer</a>
+                        <a class="btn btn-secondary bg-red mt-2" id="watch">Add to Watch List</a>
+                    </div>
+                </div>
+                
+                
+                `;
+            }
+        }
+
+        displayTrend(animelist);
+
+
+        // document.querySelector("#watch").onclick = function(){
+        //     let list = document.querySelector(".card-title").innerHTML;
+        //     console.log(list);
+        // }
+
+
+
+        document.querySelector("#searchBtn").onclick = function(){
+            let userInput = document.querySelector("#searchInput").value;
+            if (userInput) {
+                let output = [];
+                document.querySelector("#title").innerHTML = "Your Anime:";
+                document.querySelector("#card-container").innerHTML = ""
+                let len = userInput.length;
+                console.log(len);
+
+                for(let anime of animelist){
+                    let animeTitle = anime.Judul;
+                    let strContainer = "";
+
+                    console.log(animeTitle);
+
+                    for(let i=0; i<len; i++){
+                        
+                        strContainer+=animeTitle[i];
+                    }
+
+
+
+                    if(strContainer.toLowerCase() === userInput.toLowerCase()){
+                        output.push(anime);
+                    }
+
+                }
+
+                if(!output.length){
+                    document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+
+
+                }else{
+                    console.log(output);
+                    displayTrend(output);
+
+                }
+                
+            }else if(!userInput){
+                // document.querySelector("#searchBtn").setAttribute("title","Header");
+                // document.querySelector("#searchBtn").setAttribute("data-bs-toggle","popover");
+                // document.querySelector("#searchBtn").setAttribute("data-bs-placement","bottom");
+                // document.querySelector("#searchBtn").setAttribute("data-bs-content","Bottom popover");
+            }
+
+        }
+
+        document.querySelector("#action").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Action"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+
+        document.querySelector("#adventure").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Adventure"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+        document.querySelector("#comedy").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Comedy"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+        document.querySelector("#horror").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Horror"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+        document.querySelector("#romance").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Romance"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+        document.querySelector("#drama").onclick= function(){
+            
+            document.querySelector("#card-container").innerHTML = ""
+            document.querySelector("#title").innerHTML = "Your Anime:";
+            let output=[];
+
+            for (let anime of animelist){
+                let animeGenre = anime.Genre;
+
+                for(let genre of animeGenre){
+
+                    if(genre === "Drama"){
+                        output.push(anime);
+                        break;
+                    }
+                }
+            }
+
+            console.log(output);
+            if(!output.length){
+                document.querySelector("#card-container").innerHTML = 
+                    `
+                        <div class="empty">Some Text</div>
+                    `
+            }
+
+            displayTrend(output);
+        }
+
+
+
+    </script>
+  </body>
+</html>

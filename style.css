@@ -1,0 +1,41 @@
+html{
+    width: 100%;
+}
+
+body{
+    display: grid;
+}
+.row .card:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+footer{
+    width: 100%;
+}
+
+.empty{
+    width: 100px;
+    height: 500px;
+    border: 1px solid black;
+    opacity: 0;
+}
+
+
+
+
+
+.userSubmit{
+    text-decoration: none;
+    color: white;
+}
+
+.login{
+    width: 40%;
+    max-width: 480px;
+    margin: 0 auto;
+    margin-top: 270px;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
